@@ -39,6 +39,7 @@
             // btnSair
             // 
             this.btnSair.Location = new System.Drawing.Point(670, 415);
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // BtnIncluir
             // 

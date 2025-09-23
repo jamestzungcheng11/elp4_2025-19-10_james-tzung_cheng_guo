@@ -31,6 +31,11 @@ namespace PaisesEstadosCidades
             this.moeda = moeda;
 
         }
+        public Paises Clone()
+        {
+            Paises opais=new Paises(this.codigo, this.datcad, this.ultalt, this.pais, this.sigla, this.ddi, this.moeda);
+            return opais;       
+        }
 
         public string Pais
         {

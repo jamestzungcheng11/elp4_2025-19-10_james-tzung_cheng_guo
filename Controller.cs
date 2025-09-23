@@ -14,5 +14,10 @@ namespace PaisesEstadosCidades
         {
 
         }
+
+        public virtual void Salvar(object obj)
+        {
+            
+        }
     }
 }

@@ -55,6 +55,10 @@ namespace PaisesEstadosCidades
 
             ListV.Items.Add(item);
         }
+        protected override void Sair()
+        {
+           
+        }
         public override void setFrmCadastros(object Obj)
         {
             if(Obj!=null)
@@ -80,17 +84,17 @@ namespace PaisesEstadosCidades
         }
         private void BtnIncluir_Click(object sender, EventArgs e)
         {
-            Incluir();
+            //Incluir();
         }
 
         private void BtnAlterar_Click(object sender, EventArgs e)
         {
-            Alterar();
+            // Alterar();
         }
 
         private void BtnExcluir_Click(object sender, EventArgs e)
         {
-            Excluir();
+            // Excluir();
         }
         public override void ConhecaObj(object Obj, object Ctrl)
         {
@@ -100,6 +104,12 @@ namespace PaisesEstadosCidades
             if (Ctrl != null)
                 aCtrl = (Controller)Ctrl;
 
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Sair();
+            this.Close();
         }
     }
 }

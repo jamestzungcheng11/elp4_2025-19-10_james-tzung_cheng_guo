@@ -38,6 +38,10 @@
             this.txtCodUsu = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
+            // btnSair
+            // 
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;

@@ -20,6 +20,8 @@ namespace PaisesEstadosCidades
         protected virtual void Sair()
         {
             Close();
+           
+           
         }
 
         public virtual void ConhecaObj(Object Obj,Object Ctrl)
@@ -34,6 +36,7 @@ namespace PaisesEstadosCidades
 
         private void BtnSair_Click(object sender, EventArgs e)
         {
+
             Sair();
         }
     }

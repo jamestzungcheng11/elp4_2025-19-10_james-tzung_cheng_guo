@@ -39,7 +39,12 @@ namespace PaisesEstadosCidades
             
             ocidades.Ddd = txtDdd.Text;
 
-            //aCtrl.Salvar(opais);
+            //aCtrl.Salvar(ocidades);
+            
+
+           
+
+
 
 
 
@@ -106,8 +111,10 @@ namespace PaisesEstadosCidades
         }
         public override void ConhecaObj(object Obj, object Ctrl)
         {
-			ocidades = (Cidades)Obj;
-			aCtrl = (Controller)Ctrl;
+            if (Obj != null)
+                ocidades = (Cidades)Obj;
+            if (Obj != null)
+                aCtrl = (Controller)Ctrl;
         }
 
         private void BtnBuscar_Click(object sender, EventArgs e)
@@ -122,6 +129,9 @@ namespace PaisesEstadosCidades
 
         }
 
-        
+        private void BtnSalvar_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

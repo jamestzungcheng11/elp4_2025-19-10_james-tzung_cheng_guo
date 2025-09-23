@@ -13,8 +13,10 @@ namespace PaisesEstadosCidades
         FrmCadastrosPaises ofrmCadastroPaises;
         Paises opais;
         Controller aCtrl;
+        CtrlPaises aCtrlPaises;
 
-		public FrmConsultaPaises()
+
+        public FrmConsultaPaises()
 		{
 			InitializeComponent();
 		}
@@ -26,8 +28,9 @@ namespace PaisesEstadosCidades
 
         protected  override void Incluir()
         {
+            
             ofrmCadastroPaises.LimpaTxt();
-            ofrmCadastroPaises.ConhecaObj(opais, aCtrl);
+            ofrmCadastroPaises.ConhecaObj(opais, aCtrlPaises);
             
             ofrmCadastroPaises.ShowDialog();
             this.CarregaLV();
@@ -35,7 +38,7 @@ namespace PaisesEstadosCidades
         }
         protected  override void Alterar()
         {
-            ofrmCadastroPaises.ConhecaObj(opais, aCtrl);
+            ofrmCadastroPaises.ConhecaObj(opais, aCtrlPaises);
             ofrmCadastroPaises.LimpaTxt();
             ofrmCadastroPaises.CarregaTxt();
            
@@ -58,7 +61,7 @@ namespace PaisesEstadosCidades
         protected  override void Excluir()
         {
             string aux;
-            ofrmCadastroPaises.ConhecaObj(opais, aCtrl);
+            ofrmCadastroPaises.ConhecaObj(opais, aCtrlPaises);
 
             
             ofrmCadastroPaises.LimpaTxt();
@@ -75,7 +78,7 @@ namespace PaisesEstadosCidades
 
         protected override void Pesquisar()
         {
-            ofrmCadastroPaises.ConhecaObj(opais, aCtrl);
+            ofrmCadastroPaises.ConhecaObj(opais, aCtrlPaises);
             ofrmCadastroPaises.ShowDialog();
         }
         public override void setFrmCadastros(object Obj)
@@ -91,7 +94,7 @@ namespace PaisesEstadosCidades
               opais=(Paises)Obj;
 
            if(Ctrl!=null)
-             aCtrl=(Controller)Ctrl;
+             aCtrlPaises=(CtrlPaises)Ctrl;
 
         }
 

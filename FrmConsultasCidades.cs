@@ -70,8 +70,15 @@ namespace PaisesEstadosCidades
      
         protected override void Pesquisar()
         {
-            
+            ofrmCadastrosCidades.ConhecaObj(ocidade, aCtrl);
+            ofrmCadastrosCidades.ShowDialog();
         }
+       
+        protected override void Sair()
+        {
+            this.Close();
+        }
+      
         private void BtnIncluir_Click(object sender, EventArgs e)
         {
             Incluir();

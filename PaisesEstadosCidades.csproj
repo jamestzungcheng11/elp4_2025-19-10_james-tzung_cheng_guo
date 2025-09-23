@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cidades.cs" />
+    <Compile Include="Colecoes.cs" />
+    <Compile Include="ColecoesPaises.cs" />
     <Compile Include="Controller.cs" />
+    <Compile Include="CtrlPaises.cs" />
     <Compile Include="Estados.cs" />
     <Compile Include="Frm.cs">
       <SubType>Form</SubType>

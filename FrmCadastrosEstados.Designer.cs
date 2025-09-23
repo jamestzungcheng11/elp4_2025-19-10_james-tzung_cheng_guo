@@ -149,7 +149,7 @@
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.lblEstado);
             this.Name = "FrmCadastrosEstados";
-            this.Text = "Cadastros de Estados";
+            this.Text = "Cadastros Estados";
             this.Load += new System.EventHandler(this.FrmCadastrosEstados_Load);
             this.Controls.SetChildIndex(this.txtCodigo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);

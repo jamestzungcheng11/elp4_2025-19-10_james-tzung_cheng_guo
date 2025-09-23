@@ -54,6 +54,10 @@
             this.colCodPaises,
             this.colPaises});
             // 
+            // btnSair
+            // 
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // colEstados
             // 
             this.colEstados.Text = "Estados";

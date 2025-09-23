@@ -45,5 +45,15 @@ namespace PaisesEstadosCidades
         {
 
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+			Sair();
+        }
+		protected override void Sair()
+		{
+			Close();
+
+		}
     }
 }

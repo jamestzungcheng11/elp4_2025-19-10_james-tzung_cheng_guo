@@ -26,7 +26,10 @@ namespace PaisesEstadosCidades
             this.uf = uf;
             this.opais = opais;
         }
-
+        public Estados Clone()
+        {
+            return new Estados(this.codigo,this.datcad,this.ultalt,this.estado,this.uf,this.opais.Clone());
+        }
         public string Estado
         {
             get => estado;
