@@ -10,8 +10,9 @@ namespace PaisesEstadosCidades
     class DaoPaises:Dao
     {
 
-        public override void Excluir(object obj)
+        public override string  Excluir(object obj)
         {
+            return null; 
 
         }
        
@@ -63,7 +64,7 @@ namespace PaisesEstadosCidades
             return mOk;
         }
 
-        public override Object CarregaObj(int codigo)
+        public override Object CarregaObj(int chave)
         {
             return null;
         }

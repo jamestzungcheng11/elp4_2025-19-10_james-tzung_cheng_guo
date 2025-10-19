@@ -32,7 +32,7 @@ namespace PaisesEstadosCidades
             return null;
         }
 
-        public virtual Object CarregaObj()
+        public virtual Object CarregaObj(int chave)
         {
             return null;
         }
