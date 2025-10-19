@@ -29,5 +29,12 @@ namespace PaisesEstadosCidades
              
 
         }
+
+        public List<Paises> TodosPaises
+        {
+            get { return acolpais.ListaPaises; }
+        }
+
+
     }
 }

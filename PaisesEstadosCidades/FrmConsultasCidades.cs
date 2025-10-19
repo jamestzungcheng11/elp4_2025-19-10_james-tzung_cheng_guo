@@ -38,7 +38,7 @@ namespace PaisesEstadosCidades
        
         protected override void CarregaLV()
         {
-            foreach (var opais in CtrlPaises.TodosPaises)
+          
             ListViewItem item = new ListViewItem(Convert.ToString(ocidade.Codigo));
             item.SubItems.Add(ocidade.Cidade);
             item.SubItems.Add(ocidade.Oestados.Estado);

@@ -46,10 +46,11 @@ namespace PaisesEstadosCidades
       
             ofrmCadastroPaises.ShowDialog();
         }
-
         protected override void CarregaLV()
         {
-            foreach(var opais in CtrlPaises.TodosPaises)
+            CtrlPaises ctrl = new CtrlPaises(); // instância do controlador
+
+            foreach (var opais in ctrl.TodosPaises) // ✅ usar a instância
             {
                 ListViewItem item = new ListViewItem(Convert.ToString(opais.Codigo));
                 item.SubItems.Add(opais.Pais);
@@ -57,12 +58,9 @@ namespace PaisesEstadosCidades
                 item.SubItems.Add(opais.Ddi);
                 item.SubItems.Add(opais.Moeda);
                 ListV.Items.Add(item);
-
-
             }
-
-
         }
+       
        
         protected  override void Excluir()
         {

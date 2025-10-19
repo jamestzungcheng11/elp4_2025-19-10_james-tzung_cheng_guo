@@ -8,6 +8,11 @@ namespace PaisesEstadosCidades
 {
     class ColecoesPaises:Colecoes<Paises>
     {
+
+        public List<Paises> ListaPaises
+        {
+            get { return aLista; }
+        }
         public Paises BuscarPorSiglas(string sigla)
         {
             foreach (var opais in aLista)
