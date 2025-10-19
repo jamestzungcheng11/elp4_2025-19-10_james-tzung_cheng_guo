@@ -19,5 +19,26 @@ namespace PaisesEstadosCidades
         {
             
         }
+
+        public virtual List<T> Listar()
+        {
+            return null;
+
+
+        }
+        public virtual Object CarregaObj()
+        {
+            return null;
+        }
+
+        public virtual List<T>Pesquisar(string chave)
+        {
+            return null;
+
+
+        }
+
+
+
     }
 }

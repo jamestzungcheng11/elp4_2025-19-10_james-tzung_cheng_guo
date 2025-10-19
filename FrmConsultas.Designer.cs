@@ -87,9 +87,9 @@
             this.CLCodigo});
             this.ListV.FullRowSelect = true;
             this.ListV.HideSelection = false;
-            this.ListV.Location = new System.Drawing.Point(50, 74);
+            this.ListV.Location = new System.Drawing.Point(53, 61);
             this.ListV.Name = "ListV";
-            this.ListV.Size = new System.Drawing.Size(738, 335);
+            this.ListV.Size = new System.Drawing.Size(704, 335);
             this.ListV.TabIndex = 6;
             this.ListV.UseCompatibleStateImageBehavior = false;
             this.ListV.View = System.Windows.Forms.View.Details;

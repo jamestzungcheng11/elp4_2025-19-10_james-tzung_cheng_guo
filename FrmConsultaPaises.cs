@@ -49,12 +49,17 @@ namespace PaisesEstadosCidades
 
         protected override void CarregaLV()
         {
-            ListViewItem item = new ListViewItem(Convert.ToString(opais.Codigo));
-            item.SubItems.Add(opais.Pais);
-            item.SubItems.Add(opais.Sigla);
-            item.SubItems.Add(opais.Ddi);
-            item.SubItems.Add(opais.Moeda);
-            ListV.Items.Add(item);
+            foreach(var opais in CtrlPaises.TodosPaises)
+            {
+                ListViewItem item = new ListViewItem(Convert.ToString(opais.Codigo));
+                item.SubItems.Add(opais.Pais);
+                item.SubItems.Add(opais.Sigla);
+                item.SubItems.Add(opais.Ddi);
+                item.SubItems.Add(opais.Moeda);
+                ListV.Items.Add(item);
+
+
+            }
 
 
         }
